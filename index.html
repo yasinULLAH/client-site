@@ -425,6 +425,54 @@ document.addEventListener("DOMContentLoaded", function () {
         element.style.lineHeight = "1.8";
     });
 });
+
+
+// JavaScript to adjust layout for mobile view
+document.addEventListener("DOMContentLoaded", function () {
+    // Function to adjust layout based on screen width
+    function adjustLayout() {
+        if (window.innerWidth <= 768) {
+            // Apply one-column layout for mobile view
+            const sections = document.querySelectorAll("section");
+            sections.forEach(section => {
+                section.style.display = "block";
+                section.style.width = "100%";
+                section.style.padding = "20px";
+                section.style.maxWidth = "none";
+                section.style.margin = "0 auto";
+            });
+
+            // Adjust gallery layout to one column
+            const galleryContainer = document.querySelector("#gallery");
+            if (galleryContainer) {
+                galleryContainer.style.gridTemplateColumns = "1fr";
+            }
+
+            // Adjust service items and other content boxes to full width
+            const contentBoxes = document.querySelectorAll(".service-item, .team-member, .gallery-item, .section-content");
+            contentBoxes.forEach(box => {
+                box.style.width = "100%";
+                box.style.marginBottom = "20px";
+                box.style.flexDirection = "column";
+                box.style.maxWidth = "none";
+            });
+
+            // Adjust section-text to be full width on mobile
+            const sectionTexts = document.querySelectorAll(".section-text");
+            sectionTexts.forEach(text => {
+                text.style.width = "100%";
+                text.style.setProperty("width", "100%", "important");
+            });
+        }
+    }
+
+    // Initial adjustment
+    adjustLayout();
+
+    // Adjust layout on window resize
+    window.addEventListener("resize", adjustLayout);
+});
+
 </script>
 
 </body>
