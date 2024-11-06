@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safety Lines Professional Safety & Health Consultancy</title>
+    <meta name="description" content="Safety Lines is a leading safety and health consultancy in UAE, specializing in fire prevention, occupational health, and building safety services.">
+    <meta name="keywords" content="safety consultancy, fire prevention, occupational health, building safety, UAE consultancy">
+    <meta name="author" content="Safety Lines Professional Safety & Health Consultancy">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; color: #333; line-height: 1.6; }
+        
+        nav { position: fixed; top: 0; width: 100%; background: #333; color: #fff; display: flex; justify-content: space-between; align-items: center; padding: 10px 20px; z-index: 10; }
+        nav h1 { font-size: 1.5rem; color: #1a73e8; }
+        nav ul { list-style: none; display: flex; }
+        nav ul li { margin: 0 10px; }
+        nav ul li a { color: #fff; text-decoration: none; font-weight: bold; }
+        nav ul li a:hover { color: #1a73e8; }
+        .hamburger { display: none; cursor: pointer; }
+        .hamburger div { width: 25px; height: 3px; background: white; margin: 5px; }
+        
+        @media (max-width: 768px) {
+            nav ul { display: none; flex-direction: column; width: 100%; }
+            nav ul.show { display: flex; }
+            .hamburger { display: block; }
+        }
+        
+        .hero { background: url('placeholder-hero.jpg') no-repeat center center/cover; height: 100vh; display: flex; justify-content: center; align-items: center; color: #fff; text-align: center; }
+        .hero h2 { font-size: 3rem; margin-bottom: 10px; }
+        .hero p { font-size: 1.2rem; margin-bottom: 20px; }
+        .hero button { padding: 10px 20px; font-size: 1rem; background: #1a73e8; color: #fff; border: none; cursor: pointer; border-radius: 5px; }
+        .hero button:hover { background: #155bb5; }
+
+        .container { max-width: 1200px; margin: auto; padding: 20px; }
+        .section-image { width: 100%; height: 300px; background: #ddd; margin-bottom: 20px; border-radius: 8px; }
+        
+        .service-item, .team-member { display: flex; flex-direction: row; align-items: center; margin-bottom: 20px; background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); }
+        .service-item img, .team-member img { width: 50%; height: auto; border-radius: 8px; margin-right: 20px; }
+        .service-content { width: 50%; }
+        
+        @media (max-width: 768px) {
+            .service-item, .team-member { flex-direction: column; }
+            .service-item img, .team-member img { width: 100%; margin: 0 0 10px 0; }
+            .service-content { width: 100%; }
+        }
+
+        .gallery-popup { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.8); justify-content: center; align-items: center; }
+        .gallery-popup img { max-width: 90%; max-height: 90%; border-radius: 8px; }
+        .close-popup { position: absolute; top: 20px; right: 20px; color: #fff; font-size: 24px; cursor: pointer; }
+    </style>
+</head>
+<body>
+
+<nav>
+    <h1>Safety Lines</h1>
+    <ul>
+        <li><a href="#about" onclick="highlightSection('about')">About</a></li>
+        <li><a href="#vision" onclick="highlightSection('vision')">Vision</a></li>
+        <li><a href="#mission" onclick="highlightSection('mission')">Mission</a></li>
+        <li><a href="#services" onclick="highlightSection('services')">Services</a></li>
+        <li><a href="#team" onclick="highlightSection('team')">Team</a></li>
+        <li><a href="#gallery" onclick="highlightSection('gallery')">Gallery</a></li>
+        <li><a href="#contact" onclick="highlightSection('contact')">Contact</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</nav>
+
+<section class="hero">
+    <div>
+        <h2>Professional Safety & Health Consultancy</h2>
+        <p>Your Partner in Safety, Compliance, and Excellence</p>
+        <button onclick="window.location.href='#contact'">Contact Us</button>
+    </div>
+</section>
+
+<section id="about" class="about container">
+    <h2>About Us</h2>
+    <div class="service-item">
+        <img src="images/about.jpg" alt="About Us">
+        <div class="service-content">
+            <p>Safety Lines is a UAE-based consultancy specializing in safety engineering, fire prevention, occupational health, and building safety.</p>
+            <p>شركة Safety Lines هي استشارات متخصصة مقرها الإمارات العربية المتحدة في هندسة السلامة ومنع الحرائق والصحة المهنية وسلامة المباني.</p>
+        </div>
+    </div>
+</section>
+
+<section id="vision" class="vision container">
+    <h2>Our Vision</h2>
+    <div class="service-item">
+        <img src="vision-image.jpg" alt="Our Vision">
+        <div class="service-content">
+            <p>Our vision is to be the foremost provider of fire and safety consultancy services in the UAE.</p>
+            <p>رؤيتنا هي أن نكون المزود الرائد لخدمات استشارات الحماية والسلامة في الإمارات العربية المتحدة.</p>
+        </div>
+    </div>
+</section>
+
+<section id="mission" class="mission container">
+    <h2>Our Mission</h2>
+    <div class="service-item">
+        <img src="mission-image.jpg" alt="Our Mission">
+        <div class="service-content">
+            <p>Our mission is to provide exceptional consultancy services that align with the latest safety standards.</p>
+            <p>مهمتنا هي تقديم خدمات استشارية استثنائية تتماشى مع أحدث معايير السلامة.</p>
+        </div>
+    </div>
+</section>
+
+<section id="services" class="services container">
+    <h2>Our Services</h2>
+    <div class="service-item">
+        <img src="fire-safety.jpg" alt="Fire Safety Engineering">
+        <div class="service-content">
+            <h3>Fire Safety Engineering</h3>
+            <p>Comprehensive fire risk assessments, audits, and training designed to prevent fire risks.</p>
+            <p>تقييمات شاملة لمخاطر الحرائق، وعمليات التدقيق، والتدريب مصممة لمنع مخاطر الحرائق.</p>
+        </div>
+    </div>
+    <div class="service-item">
+        <img src="occupational-safety.jpg" alt="Occupational Safety">
+        <div class="service-content">
+            <h3>Occupational Safety & Health</h3>
+            <p>Professional guidance on occupational safety to create safe workplaces.</p>
+            <p>إرشادات احترافية حول السلامة المهنية لإنشاء أماكن عمل آمنة.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="contact container">
+    <h2>Contact Us</h2>
+    <div class="service-item">
+        <img src="contact-image.jpg" alt="Contact Us">
+        <div class="service-content">
+            <p>Location: Hili – Ndood Jham – Road2</p>
+            <p>Phone: 037377384 | Email: <a href="mailto:safetyline.ae@gmail.com">safetyline.ae@gmail.com</a></p>
+            <p>العنوان: هلي – ندود جهم – الطريق2</p>
+            <p>الهاتف: 037377384 | البريد الإلكتروني: <a href="mailto:safetyline.ae@gmail.com">safetyline.ae@gmail.com</a></p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 Safety Lines Professional Safety & Health Consultancy. All rights reserved.</p>
+</footer>
+
+<script>
+    function toggleMenu() {
+        document.querySelector("nav ul").classList.toggle("show");
+    }
+
+    function highlightSection(sectionId) {
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.remove('highlighted');
+            section.classList.add('dimmed');
+        });
+        const section = document.getElementById(sectionId);
+        section.classList.add('highlighted');
+        section.classList.remove('dimmed');
+    }
+
+    function showPopup(src) {
+        document.getElementById('popup').style.display = 'flex';
+        document.getElementById('popup-img').src = src;
+    }
+    
+    function closePopup() {
+        document.getElementById('popup').style.display = 'none';
+    }
+</script>
+
+</body>
+</html>

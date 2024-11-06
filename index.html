@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safety Lines Professional Safety & Health Consultancy</title>
+    <meta name="description" content="Safety Lines is a leading safety and health consultancy in UAE, specializing in fire prevention, occupational health, and building safety services.">
+    <meta name="keywords" content="safety consultancy, fire prevention, occupational health, building safety, UAE consultancy">
+    <meta name="author" content="Safety Lines Professional Safety & Health Consultancy">
+    <style>
+        /* Basic Reset and Styling */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; color: #333; line-height: 1.6; }
+        
+        /* Navigation Styling */
+        nav { position: fixed; top: 0; width: 100%; background: #333; color: #fff; display: flex; justify-content: space-between; align-items: center; padding: 10px 20px; z-index: 10; }
+        nav h1 { font-size: 1.5rem; color: #1a73e8; }
+        nav img.logo { height: 40px;width:40px; margin-right: 15px; }
+        nav ul { list-style: none; display: flex; }
+        nav ul li { margin: 0 10px; }
+        nav ul li a { color: #fff; text-decoration: none; font-weight: bold; }
+        nav ul li a:hover { color: #1a73e8; }
+        .hamburger { display: none; cursor: pointer; }
+        .hamburger div { width: 25px; height: 3px; background: white; margin: 5px; }
+        
+        /* Responsive Menu */
+        @media (max-width: 768px) {
+            nav ul { display: none; flex-direction: column; width: 100%; }
+            nav ul.show { display: flex; }
+            .hamburger { display: block; }
+        }
+        
+        /* Hero Section */
+        .hero { background: url('placeholder-hero.jpg') no-repeat center center/cover; height: 100vh; display: flex; justify-content: center; align-items: center; color: #fff; text-align: center; }
+        .hero h2 { font-size: 3rem; margin-bottom: 10px; }
+        .hero p { font-size: 1.2rem; margin-bottom: 20px; }
+        .hero button { padding: 10px 20px; font-size: 1rem; background: #1a73e8; color: #fff; border: none; cursor: pointer; border-radius: 5px; }
+        .hero button:hover { background: #155bb5; }
+        
+        /* Sections */
+        header, section { padding: 40px 20px; text-align: center; }
+        .container { max-width: 1200px; margin: auto; padding: 20px; }
+        
+        /* Content Boxes */
+        .service-item, .team-member, .gallery-item { margin-bottom: 20px; padding: 20px; background: #fff; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); }
+        
+        /* Two Column Layout */
+        .section-content { display: flex; align-items: center; }
+        .section-image { width: 50%; max-height: 300px; background: #ddd; margin-right: 20px; border-radius: 8px; }
+        .section-text { width: 50%; }
+        
+        /* SEO Dimming & Highlighting */
+        .dimmed { opacity: 0.2; }
+        .highlighted { opacity: 1; transition: opacity 0.3s ease; }
+        
+        /* Gallery Popups */
+        .gallery-popup { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.8); justify-content: center; align-items: center; }
+        .gallery-popup img { max-width: 90%; max-height: 90%; border-radius: 8px; }
+        .close-popup { position: absolute; top: 20px; right: 20px; color: #fff; font-size: 24px; cursor: pointer; }
+        
+        /* Buttons */
+        button { padding: 10px 20px; background: #1a73e8; color: #fff; border: none; cursor: pointer; border-radius: 5px; }
+        button:hover { background: #155bb5; }
+		img {
+			width: -webkit-fill-available;
+		}
+    </style>
+</head>
+<body>
+
+<nav>
+    <h1><img src="images/logo.jpeg" alt="Safety Lines Logo" class="logo">Safety Lines</h1>
+    <ul>
+        <li><a href="#about" onclick="highlightSection('about')">About</a></li>
+        <li><a href="#vision" onclick="highlightSection('vision')">Vision</a></li>
+        <li><a href="#mission" onclick="highlightSection('mission')">Mission</a></li>
+        <li><a href="#services" onclick="highlightSection('services')">Services</a></li>
+        <li><a href="#team" onclick="highlightSection('team')">Team</a></li>
+        <li><a href="#gallery" onclick="highlightSection('gallery')">Gallery</a></li>
+        <li><a href="#contact" onclick="highlightSection('contact')">Contact</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</nav>
+
+<section class="hero">
+    <div>
+        <h2>Professional Safety & Health Consultancy</h2>
+        <p>Your Partner in Safety, Compliance, and Excellence</p>
+        <button onclick="window.location.href='#contact'">Contact Us</button>
+    </div>
+</section>
+
+<section id="about" class="about container">
+    <h2>About Us</h2>
+    <div class="section-content">
+        <div class="section-image"><img src="images/11.jpeg" /></div>
+        <div class="section-text">
+            <p>Safety Lines is a UAE-based consultancy specializing in safety engineering, fire prevention, occupational health, and building safety. With years of experience, we provide a wide range of safety solutions, including risk assessments, fire audits, safety training, and evacuation plans, helping businesses achieve compliance and ensure a safe environment for all stakeholders.</p>
+            <p lang="ar">خطوط الأمان هي شركة استشارية مقرها الإمارات العربية المتحدة، متخصصة في هندسة السلامة، الوقاية من الحرائق، الصحة المهنية، وسلامة المباني. نقدم مجموعة واسعة من حلول السلامة، بما في ذلك تقييم المخاطر، تدقيق الحرائق، التدريب على السلامة، وخطط الإخلاء، لمساعدة الشركات على الامتثال وضمان بيئة آمنة لجميع أصحاب المصلحة.</p>
+        </div>
+    </div>
+</section>
+
+<section id="vision" class="vision container">
+    <h2>Our Vision</h2>
+    <div class="section-content">
+        <div class="section-image"><img src="images/0.jpeg" /></div>
+        <div class="section-text">
+            <p>Our vision is to be the foremost provider of fire and safety consultancy services in the UAE. We aim to promote proactive safety measures and instill a culture of prevention across various industries. By leveraging state-of-the-art technology and knowledge, we aspire to empower organizations with effective strategies for safety, leading to safer workplaces and communities.</p>
+            <p lang="ar">رؤيتنا هي أن نكون المزود الرائد لخدمات استشارات الحريق والسلامة في الإمارات العربية المتحدة. نحن نسعى لتعزيز التدابير الوقائية للسلامة وغرس ثقافة الوقاية عبر مختلف الصناعات. من خلال الاستفادة من التكنولوجيا المتقدمة والمعرفة، نسعى لتمكين المنظمات باستراتيجيات فعالة للسلامة، مما يؤدي إلى أماكن عمل ومجتمعات أكثر أمانًا.</p>
+        </div>
+    </div>
+</section>
+
+<section id="mission" class="mission container">
+    <h2>Our Mission</h2>
+    <div class="section-content">
+        <div class="section-image"><img src="images/2.jpeg" /></div>
+        <div class="section-text">
+            <p>Our mission is to provide exceptional consultancy services that align with the latest specifications and international standards in engineering, building, and fire safety. We are committed to delivering customized solutions that address each client’s unique needs, ensuring optimal safety and compliance, and fostering a safer working environment through education, training, and awareness programs.</p>
+            <p lang="ar">مهمتنا هي تقديم خدمات استشارية متميزة تتماشى مع أحدث المواصفات والمعايير الدولية في الهندسة، المباني، والسلامة من الحرائق. نحن ملتزمون بتقديم حلول مخصصة تتناول احتياجات كل عميل بشكل فريد، وضمان السلامة المثلى والامتثال، وتعزيز بيئة عمل أكثر أمانًا من خلال برامج التعليم، التدريب، والتوعية.</p>
+        </div>
+    </div>
+</section>
+
+<section id="services" class="services container">
+    <h2>Our Services</h2>
+    <div class="service-item">
+        <h3>Fire Safety Engineering</h3>
+        <p>Comprehensive fire risk assessments, audits, and training designed to prevent and mitigate fire-related risks. Our team evaluates your current fire safety protocols, implements preventive measures, and conducts fire drills to ensure preparedness for emergencies.</p>
+        <p lang="ar">تقييمات شاملة لمخاطر الحريق، تدقيقات، وتدريبات مصممة لمنع وتخفيف المخاطر المتعلقة بالحرائق. يقوم فريقنا بتقييم بروتوكولات السلامة من الحرائق الحالية، وتنفيذ التدابير الوقائية، وإجراء تدريبات على الحرائق لضمان الاستعداد لحالات الطوارئ.</p>
+    </div>
+    <div class="service-item">
+        <h3>Occupational Safety & Health</h3>
+        <p>Professional guidance on occupational safety and health, creating safe workplaces aligned with regulatory standards. From identifying hazards to implementing safety plans, our consultants provide practical solutions to promote a culture of safety in your organization.</p>
+        <p lang="ar">إرشادات احترافية حول السلامة والصحة المهنية، لخلق أماكن عمل آمنة تتماشى مع المعايير التنظيمية. من تحديد المخاطر إلى تنفيذ خطط السلامة، يقدم مستشارونا حلولاً عملية لتعزيز ثقافة السلامة في مؤسستك.</p>
+    </div>
+    <div class="service-item">
+        <h3>Building Evacuation & Safety Planning</h3>
+        <p>Customized evacuation strategies and emergency response plans tailored to the unique needs of your building and occupants. Our expert engineers assess potential risks, design effective evacuation routes, and provide training for smooth evacuation in emergencies.</p>
+        <p lang="ar">استراتيجيات إخلاء مخصصة وخطط استجابة للطوارئ تتماشى مع احتياجات مبناك وسكانه. يقوم مهندسونا الخبراء بتقييم المخاطر المحتملة، وتصميم طرق إخلاء فعالة، وتقديم تدريب لضمان الإخلاء السلس في حالات الطوارئ.</p>
+    </div>
+</section>
+
+<section id="team" class="team container">
+    <h2>Our Team</h2>
+    <div class="section-image" style="width:min-content;background-color:#b6c9b6"><img src="images/4.jpeg" style="width: auto;height: 133px;"/></div>
+    <div class="team-member">
+        <h3>Madam Shaikha - Manager</h3>
+        <p>With over a decade of experience in safety consultancy, Madam Shaikha leads the team with her expertise in fire safety engineering, ensuring that all services adhere to international standards and local regulations.</p>
+    </div>
+    <div class="team-member">
+        <h3>Muhammad Tahir - IT Engineer & Financial Accountant</h3>
+        <p>An IT expert and financial specialist, Muhammad Tahir ensures seamless integration of safety technology and effective financial management, contributing to our company’s strong foundation in safety solutions.</p>
+    </div>
+</section>
+<section id="gallerya" class="gallerya containera">
+<h2>Gallery</h2>
+</Section>
+<section id="gallery" class="gallery container">
+    
+    <div class="gallery-item" onclick="showPopup('images/5.jpeg')">
+        <div class="section-image"><img src="images/5.jpeg" /></div>
+        <p>Fire Safety Training Session</p>
+    </div>
+    <div class="gallery-item" onclick="showPopup('images/6.jpeg')">
+        <div class="section-image"><img src="images/6.jpeg" /></div>
+        <p>Evacuation Drill</p>
+    </div>
+    <div class="gallery-item" onclick="showPopup('images/7.jpeg')">
+        <div class="section-image"><img src="images/7.jpeg" /></div>
+        <p>Advanced Fire Safety Equipment</p>
+    </div>
+</section>
+
+<div class="gallery-popup" id="popup">
+    <span class="close-popup" onclick="closePopup()">&times;</span>
+    <img id="popup-img" src="" alt="Gallery Image">
+</div>
+
+<section id="contact" class="contact container">
+    <h2>Contact Us</h2>
+    <p>Location: Hili – Ndood Jham – Road2</p>
+    <p>Phone: 037377384 | Email: <a href="mailto:safetyline.ae@gmail.com">safetyline.ae@gmail.com</a></p>
+    <button onclick="window.location.href='mailto:safetyline.ae@gmail.com'">Get In Touch</button>
+</section>
+
+<section class="map container">
+    <h2>Our Location</h2>
+    <div class="section-image" style="height: 400px;width: 100%;">
+        <iframe src="https://www.google.com/maps/embed?pb=YOUR_MAP_EMBED_CODE" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    </div>
+</section>
+
+<script>
+    function toggleMenu() {
+        document.querySelector("nav ul").classList.toggle("show");
+    }
+
+    function highlightSection(sectionId) {
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.remove('highlighted');
+            section.classList.add('dimmed');
+        });
+        
+        const section = document.getElementById(sectionId);
+        section.classList.add('highlighted');
+        section.classList.remove('dimmed');
+    }
+
+    window.addEventListener('scroll', () => {
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.remove('dimmed');
+            section.classList.remove('highlighted');
+        });
+    });
+
+    function showPopup(src) {
+        document.getElementById('popup').style.display = 'flex';
+        document.getElementById('popup-img').src = src;
+    }
+    
+    function closePopup() {
+        document.getElementById('popup').style.display = 'none';
+    }
+	
+	// JavaScript for Lightbox-Style Gallery
+
+document.addEventListener("DOMContentLoaded", function () {
+    const galleryItems = Array.from(document.querySelectorAll(".gallery-item")).filter(item => item.querySelector("img") !== null);
+    const galleryPopup = document.getElementById("popup");
+    const popupImg = document.getElementById("popup-img");
+    const closePopupButton = document.querySelector(".close-popup");
+
+    // Set up gallery items in a 2 cards per column layout
+    const galleryContainer = document.querySelector("#gallery");
+    galleryContainer.style.display = "grid";
+    galleryContainer.style.gridTemplateColumns = "repeat(2, 1fr)";
+    galleryContainer.style.gap = "20px";
+
+    // Iterate over each gallery item and add a click event listener
+    galleryItems.forEach(item => {
+        const img = item.querySelector("img");
+        const caption = item.querySelector("p").innerText;
+
+        // Create a thumbnail style for gallery images
+        img.style.width = "100%";
+        img.style.height = "auto";
+        img.style.cursor = "pointer";
+        img.style.objectFit = "cover";
+
+        // Show popup when an image is clicked
+        item.addEventListener("click", function () {
+            galleryPopup.style.display = "flex";
+            popupImg.src = img.src;
+
+            // Add caption under the image in the popup
+            if (!document.getElementById("popup-caption")) {
+                const captionElement = document.createElement("div");
+                captionElement.id = "popup-caption";
+                captionElement.style.color = "#fff";
+                captionElement.style.marginTop = "10px";
+                captionElement.style.fontSize = "1.2rem";
+                captionElement.style.textAlign = "center";
+                galleryPopup.appendChild(captionElement);
+            }
+            document.getElementById("popup-caption").innerText = caption;
+        });
+    });
+
+    // Close popup when close button is clicked
+    closePopupButton.addEventListener("click", function () {
+        galleryPopup.style.display = "none";
+    });
+
+    // Close popup when clicking outside of the image
+    galleryPopup.addEventListener("click", function (e) {
+        if (e.target === galleryPopup || e.target === closePopupButton) {
+            galleryPopup.style.display = "none";
+        }
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    // Set hero section background image with better visibility for content
+    const heroSection = document.querySelector(".hero");
+    heroSection.style.backgroundImage = "url('images/hero.jpeg')";
+    heroSection.style.backgroundSize = "cover";
+    heroSection.style.backgroundPosition = "center";
+    heroSection.style.position = "relative";
+    heroSection.style.color = "#ffffff";
+    heroSection.style.textShadow = "2px 2px 4px rgba(0, 0, 0, 0.7)";
+    heroSection.style.padding = "20px";
+    heroSection.style.backdropFilter = "blur(4px)";
+
+    // Add an overlay to improve text visibility
+    const overlay = document.createElement("div");
+    overlay.style.position = "absolute";
+    overlay.style.top = 0;
+    overlay.style.left = 0;
+    overlay.style.width = "100%";
+    overlay.style.height = "100%";
+    overlay.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
+    overlay.style.zIndex = 1;
+    heroSection.appendChild(overlay);
+
+    // Move hero content above overlay
+    const heroContent = heroSection.querySelector("div");
+    if (heroContent) {
+        heroContent.style.position = "relative";
+        heroContent.style.zIndex = 2;
+    }
+});
+// Style headers of each section and center-align main content
+document.addEventListener("DOMContentLoaded", function () {
+    // Style headers of each section
+    const sectionHeaders = document.querySelectorAll("section h2");
+    sectionHeaders.forEach(header => {
+        header.style.padding = "20px 0";
+        header.style.textAlign = "center";
+        header.style.fontSize = "2rem";
+        header.style.fontWeight = "bold";
+        header.style.color = "#1a73e8";
+    });
+
+    // Center align all main content sections
+    const sections = document.querySelectorAll("section");
+    sections.forEach(section => {
+        section.style.display = "flex";
+        section.style.flexDirection = "column";
+        section.style.alignItems = "center";
+        section.style.justifyContent = "center";
+        section.style.textAlign = "center";
+        section.style.padding = "40px 20px";
+    });
+});
+
+
+// Gallery section styling and popup behavior
+document.addEventListener("DOMContentLoaded", function () {
+    const galleryItems = document.querySelectorAll(".gallery-item");
+    const galleryPopup = document.getElementById("popup");
+    const popupImg = document.getElementById("popup-img");
+
+    // Set up gallery items in a card layout
+    const galleryContainer = document.querySelector("#gallery");
+    galleryContainer.style.display = "grid";
+    galleryContainer.style.gridTemplateColumns = "repeat(auto-fit, minmax(300px, 1fr))";
+    galleryContainer.style.gap = "20px";
+
+    // Ensure gallery section heading is not treated as a card
+    const galleryHeading = galleryContainer.previousElementSibling;
+    if (galleryHeading && galleryHeading.tagName === "H2") {
+        galleryHeading.style.gridColumn = "1 / -1";
+        galleryHeading.style.width = "100%";
+        galleryHeading.style.textAlign = "center";
+        galleryHeading.style.marginBottom = "20px";
+    }
+
+    // Iterate over each gallery item and add click event listener
+    galleryItems.forEach(item => {
+        const img = item.querySelector("img");
+        const caption = item.querySelector("p").innerText;
+
+        // Create a card style for gallery images
+        item.style.display = "flex";
+        item.style.flexDirection = "column";
+        item.style.alignItems = "center";
+        item.style.justifyContent = "center";
+        item.style.padding = "20px";
+        item.style.boxShadow = "0 4px 8px rgba(0, 0, 0, 0.1)";
+        item.style.borderRadius = "8px";
+        item.style.backgroundColor = "#fff";
+
+        img.style.width = "100%";
+        img.style.height = "auto";
+        img.style.cursor = "pointer";
+        img.style.objectFit = "cover";
+
+        // Show popup when an image is clicked
+        item.addEventListener("click", function () {
+            galleryPopup.style.display = "flex";
+            popupImg.src = img.src;
+
+            // Add caption under the image in the popup
+            if (!document.getElementById("popup-caption")) {
+                const captionElement = document.createElement("div");
+                captionElement.id = "popup-caption";
+                captionElement.style.color = "#fff";
+                captionElement.style.marginTop = "10px";
+                captionElement.style.fontSize = "1.2rem";
+                captionElement.style.textAlign = "center";
+                galleryPopup.appendChild(captionElement);
+            }
+            document.getElementById("popup-caption").innerText = caption;
+        });
+    });
+
+    // Close popup when clicking anywhere on the popup
+    galleryPopup.addEventListener("click", function (e) {
+        if (e.target !== popupImg) {
+            galleryPopup.style.display = "none";
+        }
+    });
+});
+// JavaScript to add appropriate font for Arabic text
+document.addEventListener("DOMContentLoaded", function () {
+    // Load Google Fonts for Arabic text
+    const arabicFontLink = document.createElement("link");
+    arabicFontLink.href = "https://fonts.googleapis.com/css2?family=Amiri&display=swap";
+    arabicFontLink.rel = "stylesheet";
+    document.head.appendChild(arabicFontLink);
+
+    // Apply the font to all Arabic text elements
+    const arabicTexts = document.querySelectorAll("[lang='ar']");
+    arabicTexts.forEach(element => {
+        element.style.fontFamily = "'Amiri', serif";
+        element.style.paddingTop = "20px";
+        element.style.fontSize = "1.1rem";
+        element.style.color = "#333";
+        element.style.lineHeight = "1.8";
+    });
+});
+</script>
+
+</body>
+</html>
